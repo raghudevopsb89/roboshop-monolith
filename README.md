@@ -224,7 +224,6 @@ curl http://localhost:8080/health
 RHEL 10 ships with SELinux in enforcing mode and firewalld active. SELinux blocks Nginx from proxying requests to the application backend (`502 Bad Gateway`), and firewalld blocks external users from reaching port 80.
 
 ```shell
-setenforce 0
 systemctl stop firewalld
 systemctl disable firewalld
 ```
