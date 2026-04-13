@@ -131,10 +131,9 @@ mkdir -p /app
 Download the source archive, extract it, build the WAR with Maven, and place it in `/app`:
 
 ```shell
-curl -L -o /tmp/roboshop-monolith.zip https://raw.githubusercontent.com/raghudevopsb89/roboshop-monolith/refs/heads/main/roboshop-monolith.zip
-mkdir -p /tmp/roboshop-monolith
-cd /tmp/roboshop-monolith
-unzip /tmp/roboshop-monolith.zip
+curl -L -o /app/roboshop-monolith.zip https://raw.githubusercontent.com/raghudevopsb89/roboshop-monolith/refs/heads/main/roboshop-monolith.zip
+cd /app
+unzip roboshop-monolith.zip
 mvn clean package -DskipTests
 cp target/roboshop.war /app/roboshop.war
 ```
@@ -313,9 +312,9 @@ The application source contains the static frontend assets. Copy them into the N
 
 ```shell
 mkdir -p /usr/share/nginx/html/css /usr/share/nginx/html/js /usr/share/nginx/html/images
-cp -r /tmp/roboshop-monolith/src/main/resources/static/css/* /usr/share/nginx/html/css/
-cp -r /tmp/roboshop-monolith/src/main/resources/static/js/* /usr/share/nginx/html/js/
-cp -r /tmp/roboshop-monolith/src/main/resources/static/images/* /usr/share/nginx/html/images/
+cp -r /app/src/main/resources/static/css/* /usr/share/nginx/html/css/
+cp -r /app/src/main/resources/static/js/* /usr/share/nginx/html/js/
+cp -r /app/src/main/resources/static/images/* /usr/share/nginx/html/images/
 ```
 
 ---
