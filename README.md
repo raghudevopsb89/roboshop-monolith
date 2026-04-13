@@ -315,6 +315,7 @@ mkdir -p /usr/share/nginx/html/css /usr/share/nginx/html/js /usr/share/nginx/htm
 cp -r /app/src/main/resources/static/css/* /usr/share/nginx/html/css/
 cp -r /app/src/main/resources/static/js/* /usr/share/nginx/html/js/
 cp -r /app/src/main/resources/static/images/* /usr/share/nginx/html/images/
+chown nginx:nginx -R  /usr/share/nginx/html
 ```
 
 ---
