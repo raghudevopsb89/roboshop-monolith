@@ -131,7 +131,7 @@ mkdir -p /app
 Download the source archive, extract it, build the WAR with Maven, and place it in `/app`:
 
 ```shell
-curl -L -o /tmp/roboshop-monolith.zip https://raw.githubusercontent.com/r-devops/roboshop-monolith/artifacts/roboshop-monolith.zip
+curl -L -o /tmp/roboshop-monolith.zip https://raw.githubusercontent.com/r-devops/roboshop-monolith/roboshop-monolith.zip
 mkdir -p /tmp/roboshop-monolith
 cd /tmp/roboshop-monolith
 unzip /tmp/roboshop-monolith.zip
